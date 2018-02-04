@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -73,7 +74,17 @@ public class CustomerEntry extends AppCompatActivity implements View.OnClickList
                 setdate();
                 break;
             case R.id.ussubmit:
-                dataToSQL();
+                if( cusBU.getText().toString().length() == 0 ||
+                        cusName.getText().toString().length() == 0 ||
+                        cusAdd1.getText().toString().length() == 0 ||
+                        cusAdd2.getText().toString().length() == 0 ||
+                        cusAdd3.getText().toString().length() == 0 ||
+                        cusCity.getText().toString().length() == 0 ||
+                        cusDate.getText().toString().length() == 0) {
+                    Toast.makeText(this, "Please fill the column", Toast.LENGTH_SHORT).show();
+                }else {
+                    dataToSQL();
+                }
                 break;
             default:
                 break;
