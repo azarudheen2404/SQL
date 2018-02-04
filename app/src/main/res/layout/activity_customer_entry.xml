@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.co.esquareinfo.sql.CustomerEntry">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scrollbars="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorTextHint"
+                    android:layout_marginTop="20dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/customerBU"
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:hint="Customer BU"
+                        android:inputType="text"
+                        android:textColor="@color/colorBlack"
+                        android:layout_gravity="center" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorTextHint"
+                    android:layout_marginTop="20dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/customerName"
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:hint="CustomerName"
+                        android:inputType="text"
+                        android:textColor="@color/colorBlack"
+                        android:layout_gravity="center" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorTextHint"
+                    android:layout_marginTop="20dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/customerAdd1"
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:hint="Customer Add1"
+                        android:inputType="text"
+                        android:textColor="@color/colorBlack"
+                        android:layout_gravity="center" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorTextHint"
+                    android:layout_marginTop="20dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/customerAdd2"
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:hint="Customer Add2"
+                        android:inputType="text"
+                        android:textColor="@color/colorBlack"
+                        android:layout_gravity="center" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorTextHint"
+                    android:layout_marginTop="20dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/customerAdd3"
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:hint="Customer Add3"
+                        android:inputType="text"
+                        android:textColor="@color/colorBlack"
+                        android:layout_gravity="center" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorTextHint"
+                    android:layout_marginTop="20dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/customerCity"
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:hint="Customer City"
+                        android:inputType="text"
+                        android:textColor="@color/colorBlack"
+                        android:layout_gravity="center" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorTextHint"
+                    android:layout_marginTop="20dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/customerDate"
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:hint="Customer Date"
+                        android:focusable="false"
+                        android:textColor="@color/colorBlack"
+                        android:layout_gravity="center"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+        </ScrollView>
+        <Button
+            android:id="@+id/ussubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#5DB197"
+            android:text="Submit"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
